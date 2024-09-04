@@ -7,21 +7,26 @@
     <title>Lim Project Portfolio</title>
   </head>
   <body>
-    <nav>
+    <nav id="navbar">
       <div class="container nav">
         <div class="logo">
           <h1>CAL<span>DEV;</span></h1>
         </div>
-        <ul class="menu-list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="menu-list" id="menuList">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
     </nav>
     <section id="home">
-      <div class="container">
+      <div class="container home">
         <div class="information">
           <h1>Hi,</h1>
           <h1>I'm <span>Charles Aldrin Lim</span></h1>
@@ -37,7 +42,27 @@
       </div>
     </section>
     <section id="about">
-      <h1>ABOUT</h1>
+      <div class="container about">
+        <h1>ABOUT</h1>
+      </div>
     </section>
+    <section id="projects">
+      <div class="container projects">
+        <h1>PROJECTS</h1>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container contact">
+        <h1>CONTACT</h1>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+      integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>
